@@ -1,0 +1,552 @@
+.shortcutsWrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2010;
+}
+
+.shortcutsElement{
+    width: 500px;
+    height: 600px;
+    overflow: scroll;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--trim-color);
+    border-radius: 4px;
+    box-shadow: var(--laptop-shadow);
+    scrollbar-width: none;
+}
+
+.shortcutsElement::-webkit-scrollbar{
+    display: none;
+}
+
+.shortcutsSeparator{
+    padding-top: 50px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--trim-color);
+}
+
+.shortcutsSeparator h4 i{
+    font-size: 1.5em;
+}
+
+.shortcutsSeparator h4 {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--trim-color);
+}
+
+
+
+.overlayPopupWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+    opacity: 0;
+    display: flex;
+    transition: opacity 0.8s, z-index 0.8s;
+
+}
+
+.middlePopupWrapperOpen {
+    border: 1px solid var(--trim-color);
+    background-color: var(--background-color);
+    padding: 50px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.1), 0px 12px 24px rgba(0,0,0,.05);
+}
+
+.formHeading {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.closeIcon {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: right;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.formInput {
+  background-color: var(--background-color-alt);
+  outline: 1px solid transparent;
+  border: 1px solid var(--trim-color);
+  color: var(--text-color);
+  padding: 10px 12px;
+  border-radius: 3px;
+  width: 100%;
+  opacity: 1;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.08);
+  transition: opacity 0.5s;
+  transition: box-shadow 0.3s;
+}
+
+.pass {
+    width: 100%;
+}
+
+.formInput:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0,0,128, .8);
+}
+
+.inputSuccess {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 5px rgba(0,128,0, .8);
+}
+
+.inputSuccess:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 5px rgba(0,128,0, .8);
+}
+
+.formElementButton {
+  background-color: var(--primary-color);
+  opacity: 1;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 3px;
+  width: 100%;
+  margin: 0;
+  margin-top: 0px;
+  margin-top: 20px;
+  transition: .25s;
+  transition: opacity 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.formElementButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0,0,128, .5), 0px 0px 16px rgba(0,0,128, .2), 0px 10px 36px rgba(0,0,128, .09);
+}
+
+
+
+
+
+#spinnerAdBlur{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    background: transparent;
+
+    filter: blur(25px);
+    z-index: 100000;
+}
+
+
+.spinnerPopupWrapper{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    opacity: 1;
+    background: transparent;
+
+    z-index: 110000;
+}
+ /*.spinnerWrapper{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--glass-background);
+    z-index: 160900;
+ }*/
+
+
+
+/*======================================================
+                   Form Animations 
+  ======================================================*/
+.fadeIn {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    animation: fadeInAnimation 0.5s ease-in-out;
+}
+.fadeInPass {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    animation: fadeInAnimation 0.5s ease-in-out;
+}
+.fadeOut {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    animation: fadeOutAnimation 0.5s ease-in-out;
+}
+
+.fadeInAnimation {
+    animation: fadeInAnimation 0.5s ease-in-out;
+}
+
+.fadeInAnimationPass {
+    animation: fadeInAnimationPass 0.5s ease-in-out;
+}
+
+.fadeOutAnimation {
+    animation: fadeOutAnimation 0.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        transform: translateX(120px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        transform: translateX(-120px);
+    }
+}
+
+@keyframes fadeInAnimationPass {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        transform: translateX(120px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        transform: translateX(0px);
+    }
+}
+
+
+
+/*======================================================
+                   Loading Spinner Animations 
+  ======================================================*/
+.loading {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 12px solid var(--background-color-alt);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin .3s ease-in-out infinite;
+  -webkit-animation: spin .3s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+
+.spinnerWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 1000000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+}
+
+.spinnerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--trim-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.1), 0px 12px 24px rgba(0,0,0,.05);
+}
+
+.loadingSpinner {
+    visibility: visible;
+    opacity: 1;
+}
+
+.successNotificationWrapper{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerSuccessWrapper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.successNotificationPopup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--trim-color);
+    background-color: var(--background-color);
+    padding: 24px 12px 24px 12px;
+    border-radius: 5px;
+    width: 400;
+    max-height: 0;
+    box-shadow: var(--laptop-shadow);/*0px 2px 8px rgba(0,0,0,.1), 0px 12px 24px rgba(0,0,0,.05);*/
+    z-index: -1;
+    opacity: 0;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.subNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.successNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: green; /*var(--primary-color);*/
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.errorNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+
+
+.forkNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.searchNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.newFileNotificationIcon{
+    position: relative;
+    font-size: 3.5em;
+    color: green; /*var(--primary-color);*/
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+
+.successNotificationTitle {
+    position: relative;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.successNotificationText{
+    position: relative;
+    text-align: center;
+    font-size: .85em;
+    font-weight: 400;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.notificationBtnWrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.successNotificationBtnOpen {
+    width: 45%;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.successNotificationBtnOpen:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.successNotificationBtnClose {
+    width: 45%;
+    font-weight: 400;
+    color: var(--primary-color);
+    padding: 10px 24px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.successNotificationBtnClose:hover {
+    font-weight: 400;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.successNotificationWrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.hiddenSpinner{
+	opacity: 0;
+	visibility: hidden;
+	display: flex;
+	z-index: -1;
+	user-select: none;
+}
+
+.visibleSuccessWrapper{
+    display: flex;
+    opacity: 1;
+    z-index: 2000;
+    max-height: 100vh;
+
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.hiddenSuccessIcon{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+
+/* BEGINNING KEYBOARD SHORTCUTS */
+kbd > kbd {
+  background-color: var(--primary-color);
+  border-radius: .285714286em; /* 4px */
+  color: var(--text-color);
+  /*font: 300 .875em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: 'hack';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3px 9px 3px 7px; /* 3px 9px */
+}
+
+kbd > kbd + span {
+  font-weight: 600;
+  margin: 0 -.5em; /* 7px */
+}
+
+.shortcutsHeading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shortcutLine{
+    width: 100%;
+
+    line-height: 2.5em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.singleLetters{
+    min-width: 40px;
+    width: 40px;
+    max-width: 40px;
+}
+
+/* END KEYBOARD SHORTCUTS */

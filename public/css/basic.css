@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-background-color: rgba(37, 37, 39, 1);
+  --dark-background-color-alt: rgba(25, 25, 26, 1);
+  --dark-trim-color: #333333;
+  --dark-text-color: #F5F5F5;
+  --dark-text-color-alt: rgba(255, 255, 255, 0.5);
+  --dark-primary-color: rgba(129, 217, 95, 1);
+  --dark-primary-color-alt: rgba(129, 217, 95, .9);
+  --dark-primary-color-alt-50: rgba(32, 89, 207, 1);
+  --dark-devices-background: rgba(37, 37, 39, 1);
+  --dark-tablet-landscape-shadow: inset 0 4px 7px 1px rgba(173, 186, 204, 0.05),
+    inset 0 -5px 20px rgba(173, 186, 204, 0.15), 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 0, 0, 0.55);
+  --dark-tablet-portrait-shadow: inset 0 4px 7px 1px rgba(173, 186, 204, 0.05),
+    inset 0 -5px 20px rgba(173, 186, 204, 0.15), 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.05), 0 10px 20px rgba(0, 0, 0, 0.55);
+  --dark-glass-background: radial-gradient(
+    140% 140% at 0% 0%,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  --dark-glass-border: rgba(255, 255, 255, 0.07);
+  --dark-laptop-shadow: 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.05), 0 10px 20px rgba(0, 0, 0, 0.55);
+}
+
+body {
+  --background-color: rgba(216, 216, 218, 1);
+  --background-color-alt: rgba(210, 210, 212, 1);
+  --trim-color: rgba(0, 0, 0, 0.1);
+  --text-color: rgba(23, 23, 28, 1);
+  --text-color-alt: rgba(0, 0, 0, 0.73);
+  --primary-color: rgba(129, 217, 95, 1);
+  --primary-color-alt: rgba(129, 217, 95, .9);
+  --primary-color-alt-50: rgba(32, 89, 207, 1);
+  --devices-background: #fff;
+  --tablet-landscape-shadow: inset 0 4px 7px 1px rgba(173, 186, 204, 0.25),
+    inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.1);
+  --tablet-portrait-shadow: inset 0 4px 7px 1px rgba(173, 186, 204, 0.25),
+    inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.05), 0 10px 20px rgba(0, 21, 64, 0.1);
+  --glass-background: radial-gradient(
+    140% 140% at 0% 0%,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --laptop-shadow: 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.05), 0 10px 20px rgba(0, 21, 64, 0.1);
+  --font-family: "Roboto","Montserrat", "Poppins", "Quicksand", sans-serif;
+
+  background: var(--background-color-alt);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  scroll-behavior: smooth;
+  letter-spacing: 0.09px;
+}
+
+body.theme-dark {
+  --background-color: var(--dark-background-color);
+  --background-color-alt: var(--dark-background-color-alt);
+  --trim-color: var(--dark-trim-color);
+  --text-color: var(--dark-text-color);
+  --text-color-alt: var(--dark-text-color-alt);
+  --primary-color-alt: var(--dark-primary-color-alt);
+  --devices-background: var(--dark-devices-background);
+  --tablet-landscape-shadow: var(--dark-tablet-landscape-shadow);
+  --tablet-portrait-shadow: var(--dark-tablet-portrait-shadow);
+  --glass-background: var(--dark-glass-background);
+  --glass-border: var(--dark-glass-border);
+  --laptop-shadow: var(--dark-laptop-shadow);
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo_img{
+	height: 55px;
+}
+
+.hero_img{
+	width: 50%;
+}
+
+.sub_img{
+  	display: none;
+  }
+
+@media only screen and (max-width: 1024px) {
+  .hero_img{
+  	display: none;
+  }
+  .sub_img{
+  	display: block;
+  }
+}

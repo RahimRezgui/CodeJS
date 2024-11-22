@@ -1,0 +1,15 @@
+
+
+
+#editing::-webkit-scrollbar { 
+    display: none;  
+}
+
+#loggerWrapper::-webkit-scrollbar { 
+    display: none;  
+}
+.logger{
+    width: calc(100% - 20px);
+}
+
+

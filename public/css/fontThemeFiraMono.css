@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Fira Mono";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Fira Mono";
+}
+.bracketsTextArea{
+  font-family: "Fira Mono";
+}

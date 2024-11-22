@@ -1,0 +1,1436 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>CodeJS Editor | JavaScript Playground With AI Coding Assistants</title>
+
+    <link href="./favicons/favicon.ico" rel="icon">
+    <link sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+
+    <link rel="preload" type="text/css" href="./css/themeInit.css" as="style">
+    <link href='./css/spinner.css' type="text/css" rel='preload' as="style">
+    <script type="text/javascript" src="./js/themeInit.js"></script>
+    <link href='./css/spinner.css' type="text/css" rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./css/themeInit.css">
+    <!--<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css" integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+                
+
+
+    <script src="https://kit.fontawesome.com/56241df76a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
+    <link href='./css/mainHeader.css' type="text/css" rel='stylesheet'>
+    <link href='./css/mainSideBarNavigation.css' type="text/css" rel='stylesheet'>
+    <link href='./css/qwerycode.css' type="text/css" rel='stylesheet'>
+    <link href='./css/editorElements.css' type="text/css" rel='stylesheet'>
+    <link href='./css/qodejs.css' type="text/css" rel='stylesheet'> 
+    <link href='./css/editorTodoApp.css' type="text/css" rel='stylesheet'>
+    <link href='./css/editorSettingsSection.css' type="text/css" rel='stylesheet'>
+    <link href='./css/console.css' type="text/css" rel='stylesheet'>
+    <link href='./css/mobileViews.css' type="text/css" rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./css/readMe.css">
+    <link rel="stylesheet" type="text/css" href="./css/videoRecorder.css">
+    <link rel="stylesheet" type="text/css" href="./css/tooltip.css">
+
+    <link href='./css/inEditorSearch.css' type="text/css" rel='stylesheet'>
+    <link href='./css/searchSuggest.css' type="text/css" rel='stylesheet'>
+    <link href='./css/videoGallery.css' type="text/css" rel='stylesheet'>
+    <link href='./css/imagesGallery.css' type="text/css" rel='stylesheet'>
+
+    
+
+
+    <link id="prismCssLink" rel="stylesheet" type="text/css" href="./css/vsc-dark.css">
+    <link id="fontCssLink" rel="stylesheet" type="text/css" href="./css/fontThemeHack.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/source-code-pro@2.38.0/source-code-pro.min.css">
+    <link href="https://fonts.cdnfonts.com/css/fira-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/ubuntu-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/courier-new" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/anonymous-pro" rel="stylesheet">
+
+
+    <link href='./css/ai_styles.css' type="text/css" rel='stylesheet'>
+     
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@codejs_ai">
+    <meta name="twitter:creator" content="@codejs_ai">
+    <meta name="twitter:url" content="https://www.codejs.ai/>">
+    <meta name="twitter:title" content="CodeJS | JavaScript Playground With AI Coding Assistants"/>
+    <meta name="twitter:description" content="CodeJS is a free online code editor with live preview and integrated AI assistance. Write HTML, CSS, and JavaScript with intelligent features like autocomplete, zen coding, and AI chat support."/>
+    <meta name="twitter:image:src" content="https://codejs.ai/images/JS3.png"/>
+    <meta name="twitter:image:width" content= "1200" />
+    <meta name="twitter:image:height" content= "630" />
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+
+    <meta name="description" content="CodeJS is a free online code editor with live preview and integrated AI assistance. Write HTML, CSS, and JavaScript with intelligent features like autocomplete, zen coding, and AI chat support.">
+
+    <meta property="og:title" content="CodeJS | JavaScript Playground With AI Coding Assistants">
+    
+    <meta property="og:description" content="CodeJS is a free online code editor with live preview and integrated AI assistance. Write HTML, CSS, and JavaScript with intelligent features like autocomplete, zen coding, and AI chat support.">
+
+    <meta property="og:url" content="https://codejs.ai/">
+
+  </head>
+  
+  <script type="text/javascript" src="./js/htmlSuggestions.js"></script>
+  <script type="text/javascript" src="./js/jsSuggestions.js"></script>
+  <script type="text/javascript" src="./js/cssSuggestions.js"></script>
+  <script type="text/javascript" src="./js/methods__array.js"></script>
+  <script type="text/javascript" src="./js/css_values.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/json5/2.2.3/index.min.js" integrity="sha512-44jdhc+R2TFfzBflS3/dGNEABiNUxBkkrqwO7GWTvGsj3HkQNr3GESvI9PUvAxmqxSnTosR0Ij9y3+o+6J1hig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <body class="theme-dark">
+<div class="spinnerAdBlur " id="spinnerAdBlur"></div>
+
+<div class="spinnerPopupWrapper " id="spinnerPopupWrapper">
+
+  
+
+
+  <div id="spinnerWrapper" class="spinnerWrapper">
+
+    <div class="spinnerContainer">
+      <div id="loading" class="loading">
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<header class="header" id="header">
+
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <div class="logo logoDesktop">
+      <a href="/" target="_blank"><img src="./images/JS3.png" alt="Code JS logo "> Code<div>JS</div></a>
+    </div>
+    <div class="logo logoMobile">
+      <a href="/" target="_blank"><img src="./images/JS3.png" alt="Code JS logo "></a>
+    </div>
+
+    <!--<h1 class="projectTitle">&nbsp; &middot; &nbsp;<%= filename %>&nbsp; &middot; &nbsp;</h1>-->
+    <a class="userProfileLink" id="userProfileLink" href="" target="_blank"> <%= fileauthor %>'s profile</a>  
+
+    <ul id="menu">
+      <!--<li><span id="playRecButton" class="play-recording tooltip" onclick="playRecording()"><i class="fas fa-play"></i></span><span class="tooltiptext"><p>Play screen recording</p></span></li>
+      <li><span id="startButton" class="start-recording tooltip" onclick="openRecOptions()"><i class="fas fa-video"></i></span><span class="tooltiptext"><p>Start screen recording</p></span></li>-->
+      <!--<li><span id="stopButton" class="stop-recording sleepyBtn tooltip" onclick="stopRecording()"><i class="fas fa-video"></i></span><span class="tooltiptext"><p>Stop screen recording</p></span></li>-->
+      <!--<li><span id="openPopupBtn" onclick="openPopupWindow()" class="tooltip"><i class="fa-solid fa-list"></i></span><span class="tooltiptext"><p>Quick libraries</p></span></li>-->
+      <li><span onclick="toggle_ai_wrapper()" class="tooltip"><i class="fa-regular fa-lightbulb"></i></span><span class="tooltiptext"><p>Ask AI</p></span></li>
+      <li><span onclick="openShortcuts()" class="tooltip"><i class="fa-regular fa-keyboard"></i></span><span class="tooltiptext"><p>Shortcuts</p></span></li>
+      <li><span id="fullScreenCodeBtn" onclick="fullScreenCodeCheck()" class="tooltip"><i class="far fa-window-maximize"></i></span><span class="tooltiptext"><p>Full-screen code</p></span></li>
+      <!--<li><span id="todoPopupBtn" onclick="openTodoWindow()" class="tooltip"><i class="fa-regular fa-pen-to-square"></i></span><span class="tooltiptext"><p>Notes & to-do app</p></span></li>-->
+      <!--<li><span onclick="awaitHint()" class="tooltip"><i class="fa-regular fa-lightbulb"></i></span><span class="tooltiptext"><p>Hint JavaScript</p></span></li>-->
+      <li><span onclick="beautifyCode()" class="tooltip"><i class="fa-solid fa-code"></i></span><span class="tooltiptext"><p>Beautify Code</p></span></li>
+      <li><span id="openPopupBtn" onclick="openPopupPreferencesWindow()" class="tooltip"><i class="fa-solid fa-sliders"></i></span><span class="tooltiptext"><p>Settings & Preferences</p></span></li>
+      <!--<li><button onclick="shareProject()" id="headerShareBtn" class="headerShareBtn"><i class="fa-solid fa-share-nodes"></i> Share</button></li>-->
+      <li><button onclick="runJsShortcut()" class="headerSignUpBtn"><i class="fa-solid fa-play"></i> Run JavaScript</button></li>
+    </ul>
+  </div>
+
+</nav>
+
+
+<div class="menuIcon">
+  <span class="iconMobileMenu icon-bars"></span>
+  <span class="iconMobileMenu icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <!--<li onclick="toggleMenu(); dashboardRedirect(event)"><a href="#"><i class="fa-regular fa-compass"></i>&nbsp;Dashboard</a></li>
+      <li onclick="toggleMenu(); openPopupWindow()"><a href="#"><i class="fa-solid fa-list"></i>&nbsp;Libraries</a></li>
+      <li onclick="toggleMenu(); openTodoWindow()"><a href="#"><i class="fa-regular fa-pen-to-square"></i>&nbsp;Quick Notes</a></li>-->
+      <li onclick="toggleMenu(); toggle_ai_wrapper()"><a href="#"><i class="fa-regular fa-lightbulb"></i>&nbsp;Ask AI</a></li>
+      <li onclick="toggleMenu(); openShortcuts()"><a href="#"><i class="fa-regular fa-keyboard"></i>&nbsp;Open Shortcuts</a></li>
+      <li onclick="toggleMenu(); fullScreenCodeCheck()"><a href="#"><i class="fa-solid fa-code"></i>&nbsp;Lock Code Scroll</a></li>
+      <!--<li onclick="awaitHint(); toggleMenu()"><a href="#"><i class="fa-regular fa-lightbulb"></i>&nbsp;Hint JavaScript</a></li>-->
+      <li onclick="runJsShortcut(); toggleMenu()"><a href="#"><i class="fa-solid fa-rotate-right"></i>&nbsp;Run JavaScript</a></li>
+      <!--<li onclick="toggleMenu(); forkProject()"><a href="#"><i class="fa-solid fa-code-fork"></i>&nbsp;Fork Project</a></li>
+      <li onclick="toggleMenu(); debugMode()"><a href="#"><i class="fa-solid fa-code-compare"></i>&nbsp;Live Debug Mode</a></li>-->
+      <!--<li onclick="toggleMenu(); newPublicFileInit()"><a href="#"><i class="fa-regular fa-file"></i>&nbsp;New Project</a></li>
+      <li onclick="toggleMenu(); openReadMe()"><a href="#"><i class="fa-regular fa-bookmark"></i>&nbsp;ReadMe.txt</a></li>
+      <li onclick="toggleMenu(); openShortcuts()"><a href="#"><i class="fa-regular fa-circle-question"></i>&nbsp;Help</a></li>-->
+      <li onclick="toggleMenu(); openPopupPreferencesWindow()"><a href="#"><i class="fa-solid fa-sliders"></i>&nbsp;Settings</a></li>
+      <!--<li onclick="toggleMenu(); logoutRedirect(event)"><a href="#"><i class="fa-solid fa-power-off"></i>&nbsp;Sign Out</a></li>
+      <li onclick="toggleMenu(); shareProject()"><a href="#"><i class="fa-solid fa-share-nodes"></i>&nbsp;Share This Project</a></li>-->
+    </ul>
+
+</div>
+
+
+    </header>
+
+<div class="codeEditorOuterWrapper">
+
+  <div class="container">
+        <!--<div id="sideNavigation" class="navigation" onmouseenter="toggleSideBarNavigationView()" onmouseleave="toggleSideBarNavigationHide()">
+
+            <ul>
+                
+
+                <li class="sideMenuItem dashboardLogout" onclick="dashboardRedirect(event)" id="sideMenuItem">
+                   
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-regular fa-compass"></i>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="sideMenuItem " onclick="openEditorSearchBar(event)" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-search"></i>
+                        </span>
+                        <span class="title">CodeJS Search</span>
+                    </a>
+                </li>
+
+                <li class="sideMenuItem " onclick="forkProject()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-code-fork"></i>
+                        </span>
+                        <span class="title">Fork Project</span>
+                    </a>
+                </li>
+
+                <li class="sideMenuItem " onclick="runJsShortcut()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </span>
+                        <span class="title">Run JavaScript</span>
+                    </a>
+                </li>
+
+                 <li class="sideMenuItem " onclick="debugMode()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                        <span class="title">Live Debug Mode</span>
+                    </a>
+                </li>
+
+                <li class="sideMenuItem " onclick="newPublicFileInit()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-regular fa-file"></i>
+                        </span>
+                        <span class="title">New Project</span>
+                    </a>
+                </li>
+
+
+                <li class="sideMenuItem " onclick="openShortcuts()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                 <li class="sideMenuItem " onclick="openReadMe()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </span>
+                        <span class="title">ReadMe.txt</span>
+                    </a>
+                </li>
+              
+
+                <li class="logOutSideBarBtn sideMenuItem dashboardRedirect " onclick="logoutRedirect(event)" id="sideMenuItem">
+                    
+                    <a href="#" >
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-power-off"></i>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+                <li class="sideMenuItem moreResBtn " onmouseenter="showMoreRes()" onmouseleave="hideMoreRes()" id="sideMenuItem">
+                    
+                    <a href="#">
+                        <span class="iconSide iconHover">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                        <span class="title">Resources</span>
+                    </a>
+                </li>
+            </ul>
+        </div>-->  
+
+  <div class="mainContainerQodeJS">
+  <div class="code-editor" id="codeEditor">
+
+    <div class="tabs">
+      <div class="tabs__head">
+
+      <div class="codeTabsToggles">
+        <div id="htmlToggleBtn" class="tabs__toggle tabs__toggleHtml is-active">
+          <span class="tabs__name"><i class="fa-brands fa-html5"></i><p>HTML</p></span>
+        </div>
+        <div id="cssToggleBtn" class="tabs__toggle tabs__toggleCss">
+          <span class="tabs__name"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></span>
+        </div>
+        <div id="jsToggleBtn" class="tabs__toggle tabs__toggleJs">
+          <span class="tabs__name"><i class="fa-brands fa-js"></i><p>JavaScript</p></span>
+        </div>
+      </div>
+
+        <div class="moreOptionsEditorHeadWrapper">
+          <!--<button onclick="saveQodeJSFile()" class="moreOptionsBtn tooltip"><i class="fa-regular fa-floppy-disk"></i><span class="tooltiptext">Save changes</span></button>-->
+          <button onclick="toggle_ai_wrapper()" class="moreOptionsBtn tooltip"><i class="fa-regular fa-lightbulb"></i><span class="tooltiptext">Ask AI</span></button>
+          <button onclick="downloadFile()" class="moreOptionsBtn tooltip"><i class="fa-solid fa-arrow-down"></i><span class="tooltiptext">Download file</span></button>
+          <button onclick="openConsole()" class="moreOptionsBtn tooltip"><i class="fa-solid fa-terminal"></i><span class="tooltiptext">Console</span></button>
+          <!--<button onclick="shareProject()" class="moreOptionsBtn shareMobileBtn tooltip"><i class="fa-regular fa-paper-plane"></i><span class="tooltiptext">Share project</span></button>-->
+        </div>
+      </div>
+
+      <div class="tabs__body">
+
+        <div class="tabs__content is-active" id="html-code" onfocus="backScrollHtml()" onmouseover="backScrollHtml()">
+        <section class="htmlLineNumbers lineNumbers" id="nums">
+          
+        </section> 
+
+          <div style="font-weight: 300;" autocorrect="off" autocomplete="off" autocapitalize="none" contenteditable="true" class="htmlCodeBlock" id="editing" spellcheck="false" ondblclick="getHighlightWord(this, event)" onchange="runHtml()" onkeyup="getAutocomplete(this, event); runHtml()"  onkeydown="getWordsBefore(this, event);" onscroll="scrollHtml();" onclick="removeElements(); cleanHighlight(this); get_variables(this); " oninput="runHtml()" onfocus="backScrollHtml()" 
+          onfocusout="removeElements()"></div>
+
+          <div class="bracketsTextArea htmlBracketsText" id="htmltextSearchDiv" aria-hidden="true" ></div>
+
+          <pre style="font-weight: 300;" id="highlighting" aria-hidden="true" class="htmlHighlighting">
+            <code class="language-html" id="highlighting-content"></code>
+          </pre>
+        </div>
+
+
+        <div class="tabs__content" id="css-code" onfocus="backScrollCss()" onmouseover="backScrollCss()">
+        <section class="cssLineNumbers lineNumbers" id="nums">
+          
+        </section>
+
+          <div style="font-weight: 300;" autocorrect="off" autocomplete="off" autocapitalize="none" contenteditable="true" class="cssCodeBlock" id="editing" spellcheck="false" ondblclick="getHighlightWord(this, event)" onchange="runCss()" onkeyup="getAutocomplete(this, event); runCss()" onkeydown="getWordsBefore(this, event);" onscroll="scrollCss();" onclick="removeElements(); cleanHighlight(this); get_variables(this); " oninput="runCss()" onfocus="backScrollCss()"  onfocusout="removeElements()"></div>
+
+          <div class="bracketsTextArea cssBracketsText" id="csstextSearchDiv" aria-hidden="true" ></div>
+
+          <pre style="font-weight: 300;" id="highlighting" aria-hidden="true" class="cssHighlighting language-css match-braces rainbow-braces" onclick="doLog(event)" >
+            <code class="language-css match-braces" id="highlighting-content"></code>
+          </pre>
+        </div>
+        
+
+
+        <div class="tabs__content" id="js-code" onfocus="backScrollJs()" onmouseover="backScrollJs()">
+        <section class="jsLineNumbers lineNumbers" id="nums">
+          
+        </section>
+
+          <div style="font-weight: 300; " autocorrect="off" autocomplete="off" autocapitalize="none" contenteditable="true" class="jsCodeBlock" id="editing" spellcheck="false" ondblclick="getHighlightWord(this, event)" onchange="runJs()" onkeyup="getAutocomplete(this, event); runJs()" onkeydown="getWordsBefore(this, event);" onscroll="scrollJs();" onclick="removeElements(); cleanHighlight(this); get_variables(this); " oninput="runJs()" onfocus="backScrollJs()" onfocusout="removeElements()"></div>
+
+          <div style="font-weight: 300; " class="bracketsTextArea jsBracketsText" id="jstextSearchDiv" aria-hidden="true" ></div>
+
+          <pre style="font-weight: 300; pointer-events: all;" id="highlighting" aria-hidden="true" class="jsHighlighting language-js match-braces rainbow-braces" onclick="doLog(event)" onmouseover="checkBrackets(this)">
+            <code class="language-javascript" id="highlighting-content"></code>
+          </pre>
+        </div>
+
+
+
+      </div>
+
+      <div class="loggerBtnWrapper" id="loggerBtnWrapper">
+        <button class="consoleBtn" onclick="runJsShortcut()">Run JavaScript</button>
+          <button class="consoleBtn" onclick="clearConsole()">Clear Console</button>
+          <button class="consoleBtn consoleBtnClose" onclick="openConsole()">Close &times;</button>
+      </div>
+
+      <div id="loggerWrapper" class="loggerWrapper">
+        
+        <span class="logger" id="logger"></span>
+
+      </div>
+
+    </div>
+
+  <div id="resultPreviewWrapper" class="resultPreviewWrapper" >
+    <div id="resultHintWrapper" class="resultHintWrapper hiddenHints"></div>
+    <div class="iframeOGWidth " id="resultMobileViewWrapper">
+
+      <div class="mobileStatusBar hiddenResults" id="mobileStatusBar">
+      <div class="mobileStatusRelative">
+        <div class="MSB_time"><span class="phoneTimeSpan">17:42</span></div>
+
+
+        <div class="MSB_camera">
+          <div class="roundedLeft"><div class="backRoundedLeft"></div><div class="frontRoundedLeft"></div></div>
+          <div class="roundedMiddle"></div>
+          <div class="roundedRight"><div class="backRoundedRight"></div><div class="frontRoundedRight"></div></div>
+        </div>
+
+
+        <div class="MSB_status">
+          <div class="MSB_statusWrapper">
+            <span class="mobileViewIconsCell"><ion-icon name="cellular"></ion-icon></span>
+            <span class="mobileViewIcons"><ion-icon name="wifi-sharp"></ion-icon></span>
+            <span class="mobileViewIconsBattery"><ion-icon name="battery-half"></ion-icon></span>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    <iframe  name="my_Code_JS_script" class="iframe mobileIframe " id="result" src="/page" sandbox="allow-top-navigation-by-user-activation allow-top-navigation allow-same-origin allow-scripts allow-forms allow-popups allow-same-origin allow-scripts allow-forms" allow="geolocation; midi; camera; microphone;"></iframe>
+    <!--<iframe name="my_Code_JS_script" class="iframeDebug mobileIframe iframeHost" id="resultHost" src=""  sandbox=" allow-scripts allow-forms allow-popups allow-same-origin allow-scripts allow-forms"></iframe>-->
+
+    </div>
+  </div>
+  
+  </div>
+
+
+</div>
+
+
+</div>
+
+  <div class="jsSuggestionsDiv">
+        
+        <ul id="list" class="list"></ul>
+  </div>
+
+  <section class="ai_wrapper" id="ai_wrapper">
+
+      <div class="ai_close_btn_wrapper">
+        <div class="ai_heading_div">
+            <h2 class="ai_heading">Ask AI</h2>
+            <select class="ai_model_select" id="ai_model_select">
+              <option value="gemini">Gemini 1.5 Pro</option>
+              <option value="claude">Claude 3.5 Sonnet</option>
+              <option value="gpt">GPT-4o</option>
+            </select>
+        </div>
+        
+        <span onclick="toggle_ai_wrapper()" class="ai_close_btn"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+
+      <div class="ai_answers_wrapper" id="ai_answers_wrapper">
+          
+      </div>
+
+      <div class="ai_questions_wrapper">
+          <div class="ai_questions_container">
+              <textarea class="ai_questions_textarea" id="ai_questions_textarea"></textarea>
+              <button class="ai_questions_btn" id="ai_questions_btn"><i class="fa-regular fa-paper-plane"></i></button>
+          </div>
+      </div>
+
+  </section>
+
+  <div class="popupContainer" id="popupContainer" onclick="closeAllPopups(this, event)">
+    <div class="popupWindow" id="popupWindow">
+        <div class="code-editor-settings" id="codeEditorSettings">
+
+    <div class="settingsTabs">
+      <div class="settingsTabs__head">
+        <div class="settingsTabs__toggle is-active">
+          <span class="settingsTabs__name"><i class="fa-solid fa-list"></i>Libraries</span>
+        </div>
+        <div class="settingsTabs__toggle">
+          <span class="settingsTabs__name"><i class="fa-solid fa-code"></i>Scripts</span>
+        </div>
+      </div>
+
+      <div class="settingsTabs__body">
+
+        <div class="settingsTabs__content is-active" id="librariesWindow">
+
+          <h3 class="popupHeading">Quickly add popular libraries to your Code JS project.</h3>
+          
+
+          <div class="librariesToggleElement bootstrap4LinksToggleElement">
+            <span class="librariesToggleElementSpan"><i class="fa-brands fa-bootstrap"></i><h6>Bootstrap 4 Library</h6></span>
+            <label class="script_toggle" for="myscript_Toggle">
+              <input class="script_toggle__input bootstrap4Links" name="bootstrap4Links" type="checkbox" id="myscript_Toggle" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill"></div>
+            </label>
+          </div>
+
+          <div class="librariesToggleElement bootstrap5LinksToggleElement ">
+            <span class="librariesToggleElementSpan"><i class="fa-brands fa-bootstrap"></i><h6>Bootstrap 5 Library</h6></span>
+            <label class="script_toggle2" for="myscript_Toggle2">
+              <input class="script_toggle__input2 bootstrap5Links" name="bootstrap5Links" type="checkbox" id="myscript_Toggle2" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill2"></div>
+            </label>
+          </div>
+
+          <div class="librariesToggleElement reactLinksToggleElement">
+            <span class="librariesToggleElementSpan"><i class="fa-brands fa-react"></i><h6>React JS Library</h6></span>
+            <label class="script_toggle3" for="myscript_Toggle3">
+              <input class="script_toggle__input3 reactLinks" name="reactLinks" type="checkbox" id="myscript_Toggle3" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill3"></div>
+            </label>
+          </div>
+
+          <div class="librariesToggleElement jQueryLinksToggleElement">
+            <span class="librariesToggleElementSpan"><i class="fa-brands fa-square-js"></i><h6>jQuery Library</h6></span>
+            <label class="script_toggle4" for="myscript_Toggle4">
+              <input class="script_toggle__input4 jQueryLinks" name="jQueryLinks" type="checkbox" id="myscript_Toggle4" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill4"></div>
+            </label>
+          </div>
+
+          <div class="librariesToggleElement tailwindLinksToggleElement">
+            <span class="librariesToggleElementSpan"><i class=""> ≈</i><h6>Tailwind CSS Library</h6></span>
+            <label class="script_toggle5" for="myscript_Toggle5">
+              <input class="script_toggle__input5 tailwindLinks" name="tailwindLinks" type="checkbox" id="myscript_Toggle5" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill5"></div>
+            </label>
+          </div>
+
+          <div class="librariesToggleElement vueLinksToggleElement">
+            <span class="librariesToggleElementSpan"><i class="fa-brands fa-vuejs"></i><h6>Vue JS Library</h6></span>
+            <label class="script_toggle6" for="myscript_Toggle6">
+              <input class="script_toggle__input6 vueLinks" name="vueLinks" type="checkbox" id="myscript_Toggle6" onclick="scriptValidator(this)">
+            <div class="script_toggle__fill6"></div>
+            </label>
+          </div>
+
+          <div>
+            <button id="closePopupBtn" class="closePopupBtn" onclick="closePopupWindow()">Close</button>
+          </div>
+
+        </div>
+
+        <div class="settingsTabs__content" id="customScriptWindow">
+
+        <div class="customTagsInjection">
+          <h3>Add custom Scripts and Link tags.</h3>
+          <p>Separate each Script or Link tag by a <b style="color:green;">(" , ")</b> Comma.</p>
+          <label for="customHeadScriptBox">Add tags to the head of your document</label>
+          <textarea class="injectionTextarea" id="customHeadScriptBox" name="customHeadScriptBox"></textarea>
+          <label for="customBodyScriptsheetBox">Add tags to the body of your document</label>
+          <textarea class="injectionTextarea" id="customBodyScriptsheetBox" name="customBodyScriptsheetBox"></textarea>
+          <button class="customScriptsButton" onclick="saveCustomScripts()">Save changes</button>
+          <button id="closePopupBtn" class="closePopupBtn" onclick="closePopupWindow()">Close</button>
+        </div>
+
+
+        </div>
+
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileId">546846618</p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileName"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileAuthor"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileAuthorId"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="htmlData"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="cssData"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="jsData"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="previewImage"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="librariesData"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="customTagsData"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="todoDataSet"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="comments"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileInitDate"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="fileLastSavedDate"></p>
+        <p style="display: none; opacity: 0; visibility: hidden;" class="formFieldDataPage" id="readMeTXTFile"></p>
+
+        <div class="settingsTabs__content" id="stylesWindow">
+
+        </div>
+      </div>
+
+    </div>
+ 
+  </div>
+      
+  </div>
+
+    <div class="popupTodo" id="popupTodo">
+
+      <h3 class="popupHeadingTodo">Add tasks, set goals and, keep track of progress</h3>
+
+    <div class="todoWrapper">
+      <div class="task-input">
+        <i class="fa-solid fa-list-ol"></i>
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="activeTodo" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button onclick="clearAllTodos()" id="" class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <button id="closePopupBtn" class="closePopupBtn" onclick="closeTodoWindow()">Hide list</button>
+      
+    </div>
+
+    <div class="popupEditorFontSize" id="popupEditorFontSize">
+
+      <h3 class="popupHeading">Change code font size.</h3>
+
+       <div>
+
+          <div class="range">
+          <div class="field">
+            <div class="value left">1</div>
+              <input onchange="changeFontSize(this)" class="fontSizeInputSlider" type="range" min="1" max="5" value="2" steps="1">
+            <div class="value right">5</div>
+            </div>
+          </div>
+
+        </div>
+
+        <button id="closePopupBtn" class="closePopupBtn" onclick="closePopupEditorFontSizeWindow()">Save changes</button>
+      
+    </div>
+
+    <div class="popupEditorThemeSelection" id="popupEditorThemeSelection">
+
+      <h3 class="popupHeading">Code highlighting themes.</h3>
+
+       <div>
+
+          <div class="dropdown">
+          <div class="selectFont">
+            <span class="selected">Tomorrow</span>
+              <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li onclick="changePrismTheme(this)" class="active">Tomorrow</li>
+            <li onclick="changePrismTheme(this)">Okaidia</li>
+            <li onclick="changePrismTheme(this)">Morning</li>
+            <li onclick="changePrismTheme(this)">Solarized</li>
+          </ul>
+        </div>
+
+        </div>
+        <button id="closePopupBtn" class="closePopupBtnfull" onclick="closePopupEditorThemeSelectionWindow()">Save theme</button>
+      
+    </div>
+
+
+    <div class="popupPreferencesSelection" id="popupPreferencesSelection">
+
+      <h3 class="popupHeading">Code highlighting themes.</h3>
+
+       <div>
+
+          <div class="dropdown">
+          <div class="selectFont">
+            <span class="selected">Tomorrow</span>
+              <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li onclick="changePrismTheme(this)" class="active">Tomorrow</li>
+            <li onclick="changePrismTheme(this)">Okaidia</li>
+            <li onclick="changePrismTheme(this)">Morning</li>
+            <li onclick="changePrismTheme(this)">Solarized</li>
+          </ul>
+        </div>
+
+        </div>
+      <button id="closePopupBtn" class="closePopupBtnfull" onclick="closePopupPreferencesWindow()">Save changes</button>
+    </div>
+
+  </div>
+
+  <button onclick="goFullScreen()" class="fullScreenBottomCornerBtn" id="fullScreenBottomCornerBtn">
+      <i class="fa-solid fa-expand"></i>
+  </button>
+
+  <button onclick="goSmallScreenShortcut()" class="smallScreenBottomCornerBtn" id="smallScreenBottomCornerBtn">
+      <i class="fa-solid fa-compress"></i>
+  </button>
+
+
+  <div class="menu-views-mobile">
+
+  <input type="checkbox" href="#" class="menu-open-views" name="menu-open" id="menu-open">
+
+  <label class="menu-open-button" for="menu-open">
+    <ion-icon name="laptop-outline"></ion-icon>
+  </label>
+ 
+  <span onclick="toggleMobileView(this)" class="menu-item-views item-1"><ion-icon name="phone-portrait-outline"></ion-icon></span>
+  <span onclick="toggleTabletView(this)" class="menu-item-views item-2"><ion-icon name="tablet-portrait-outline"></ion-icon></span>
+  <span onclick="toggleDesktopView(this)" class="menu-item-views item-3"><ion-icon name="laptop-outline"></ion-icon></span>
+  
+  </div>
+
+
+<div class="mainSettingsWindow" id="mainSettingsWindow" onclick="checkForClose(this, event)">
+<section class="settingsCenterWindow" id="settingsCenterWindow">
+  <div class="mainSettingsWrapperBlur" id="mainSettingsWrapperBlur"></div>
+  <div class="mainSettingsWrapper" id="mainSettingsWrapper">
+    <section class="mainSettingsHeading">
+      <span class="mainSettingsHeadingSpan"><h1>Editor Preferences</h1></span>
+      <span class="mainSettingsHeadingOptionsSpan" onclick="closePopupPreferencesWindow()"><h3>Save Settings</h3><i class="fa-solid fa-sliders"></i></span>
+    </section>
+    <section class="mainSettingsBodyWrapper">
+      <div class="settingsBodyLeftSection">
+                <div class="grid grid--half">
+          <h3>General</h3>
+          <div class="form-item">
+            <label class="form-item__label">Font size</label>
+            <div class="form-item__control form_item_larger">
+              <div class="radio">
+                <div id="1" onclick="changeFontSizeOnClick(this)" class="radio__item1 radio__item"><span class="u-text--extra-small">A</span></div>
+                <div id="2" onclick="changeFontSizeOnClick(this)" class="radio__item2 radio__item is-active"><span class="u-text--small">A</span></div>
+                <div id="3" onclick="changeFontSizeOnClick(this)" class="radio__item3 radio__item"><span class="u-text--normal">A</span></div>
+                <div id="4" onclick="changeFontSizeOnClick(this)" class="radio__item4 radio__item"><span class="u-text--large">A</span></div>
+                <div id="5" onclick="changeFontSizeOnClick(this)" class="radio__item5 radio__item"><span class="u-text--extra-large">A</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-item">
+            <label class="form-item__label">Code Highlight Theme</label>
+            <div class="form-item__control">
+              <select class="controlItem control--select" onchange="changePrismTheme(this)">
+                <option class="opSelectTheme" onclick="changePrismTheme(this)" selected="selected">Tomorrow</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Okaidia</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Morning</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Solarized</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Eleven-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Atom-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Base16-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">CB</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Coldark-Cold</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Coldark-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Coy</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Darcula</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Darcula-Old</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Earth</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Forest</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Sea</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Duotone-Space</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">GH-Colors-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Gruvbox-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Gruvbox-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Hols</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Hopscotch</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Lucario</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Material-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Material-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Material-Oceanic</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Night-Owl</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Nord</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">One-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">One-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Shades-of-Purple</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Solarized-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Synthwave-84</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">VS-Light</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">VSC-Dark</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Xonokai</option>
+                <option class="opSelectTheme" onclick="changePrismTheme(this)">Z-Touch</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="form-item">
+            <label class="form-item__label">Code Font</label>
+            <div class="form-item__control">
+              <select class="controlItem control--select" onchange="changeFontTheme(this)">
+                <option class="opSelectFont"  selected="selected">Hack</option>
+                <option class="opSelectFont" >Source Code Pro</option>
+                <option class="opSelectFont" >Ubuntu Mono</option>
+                <option class="opSelectFont" >Fira Mono</option>
+                <option class="opSelectFont" >Courier New</option>
+                <option class="opSelectFont" >Anonymous Pro</option>
+                <option class="opSelectFont" >MonoSpace</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="form-item">
+            <label class="form-item__label">Default Theme</label>
+            <div class="form-item__control">
+              <select class="controlItem control--select" onchange="applyThemeOnClick(this)">
+                <option class="uiSelectTheme" onclick="applyThemeOnClick(this)" id="dark" selected="selected">Dark</option>
+                <option class="uiSelectTheme" onclick="applyThemeOnClick(this)" id="auto">Auto</option>
+                <option class="uiSelectTheme" onclick="applyThemeOnClick(this)" id="light">Light</option>
+              </select>
+            </div>
+          </div>
+          <!--<strong><p><small>Premium Feature</small></p></strong>
+          <div class="form-item">
+            <label class="form-item__label">Enable Editor Web Search</label>
+            <div onclick="enableWebSearch(this)" class="form-item__control webSearchToggle toggle_setting" id="webSearchToggle">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          <div class="form-item">
+            <label class="form-item__label">Editor Default Search</label>
+            <div class="form-item__control">
+              <select class="controlItem control--select">
+                <option class="uiSelectSearch" onclick="setSearchPref(this)" selected="selected">CodeJS Projects</option>
+                <option class="uiSelectSearch" onclick="setSearchPref(this)">Web Search</option>
+                <option class="uiSelectSearch" onclick="setSearchPref(this)">Web Images</option>
+                <option class="uiSelectSearch" onclick="setSearchPref(this)">Videos</option>
+                <option class="uiSelectSearch" onclick="setSearchPref(this)">StackOverflow</option>
+                <option class="uiSelectSearch" onclick="setSearchPref(this)">Snippets</option>
+              </select>
+            </div>
+          </div>-->
+          
+          <h3>Windows</h3>
+          <div  class="form-item disabledElement">
+            <label class="form-item__label">Undock To-do Window<span class="comingSoonSpan"> (Experimental Feature)</span></label>
+            <div class="form-item__control toggle_setting">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          <div class="form-item disabledElement">
+            <label class="form-item__label">Undock Terminal Window<span class="comingSoonSpan"> (Experimental Feature)</span></label>
+            <div class="form-item__control toggle_setting">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          <div class="form-item disabledElement">
+            <label class="form-item__label">Undock Palette Window<span class="comingSoonSpan"> (Experimental Feature)</span></label>
+            <div class="form-item__control toggle_setting">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+                
+        </div>
+
+      </div>  
+      
+      <div class="settingsBodyRightSection">
+
+        <div class="grid grid--half">
+          <h3>Performance</h3>
+          <span class="formItemWrapper" id="formItemWrapper">
+          <div class="form-item">
+            <label class="form-item__label">Enable Autocomplete</label>
+            <div onclick="enableAutocomplete(this)" class="form-item__control toggle_setting is-active" id="autocompleteToggle">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          </span>
+          <div class="form-item">
+            <label class="form-item__label">Auto Run JavaScript</label>
+            <div onclick="autoRunJSPref(this)" class="form-item__control toggle_setting" id="autoRunJsToggle">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          <p><small>Default delay: <strong>2 seconds</strong></small></p>
+          <div class="form-item">
+            <label class="form-item__label">Auto Run JavaScript Delay</label>
+
+            <div 
+class="form-item__control"><small><strong><span 
+class="slider__value">2</span><span>&nbsp;seconds</span></strong></small></div>
+            <div class="slider">
+              <input onchange="autoRunJSDelay(this)" class="slider__input" type="range" value="2" min="0" max="20"/>
+              <div class="slider__positive" style="width: 25%;"></div>
+            </div>
+          </div>
+          <!--<div class="form-item">
+            <label class="form-item__label">Expand Side-Menu on Hover</label>
+            <div onclick="expandSideBarPref(this)" class="form-item__control toggle_setting sideBarVisible" id="expandMenuToggle">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>-->
+          <p><small>Maximize Editor screen real-estate with this layout.</small></p>
+          <div class="form-item">
+            <label class="form-item__label">Borderless Editor windows</label>
+            <div onclick="maxEditorSpace()" class="form-item__control toggle_setting" id="maxEditorToggle">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+          <p class=""><small>Includes variables in autocomplete suggestions.</small></p>
+          <div class="form-item">
+            <label class="form-item__label">Variables Autosuggest<span class="comingSoonSpan">(New Feature)</span></label>
+            <div class="form-item__control toggle_setting is-on">
+              <div class="toggle__handle"></div>
+            </div>
+          </div>
+         
+          <p><small>These settings are applied globally to your account.</small></p>
+
+          <div class="buttons">
+            <button onclick="closePopupPreferencesWindow()" class="button">Save</button>
+          </div>
+          
+          
+        </div>
+        
+
+        
+      
+      
+    </section>
+  </div>
+  </section>
+</div>
+
+<div class="searchPopUpContainer">
+  <form onsubmit="" action="" method="post" class="searchForm" autocomplete="off">
+        <div class="search-bar"><input type="text" placeholder="Search CodeJS" name="q" class="searchBar" id="searchBar">
+        <button onsubmit="searchDirectingMain(event); removeSuggest()" onclick="searchDirectingMain(event); removeSuggest()" type="submit"><i class="fas fa-search"></i></button></div>
+        <ul class="searchSuggestList hiddenResults" id="suggestListElement"></ul>
+  </form>
+</div>
+
+<!-- BEGINNING OF IN EDITOR SEARCH SUGGEST -->
+<div class="inEditorResultsWrapper" id="inEditorResultsWrapper" onclick="closeInEditorResultsOrBar(event)">
+<section class="resultSectionWrapper hiddenResults" id="resultSectionWrapper">
+
+<div class="searchBarPopupWrapper">
+  <form action="" method="" class="search-bar searchBarPopUp" autocomplete="off">
+        <input type="text" placeholder="Search CodeJS" name="q" class="searchBarOpen" id="searchBarOpen">
+        <button onsubmit="searchDirecting(event)" onclick="searchDirecting(event)" type="submit"><i class="fas fa-search"></i></button>
+        <ul class="searchSuggestListOpen hiddenResults"></ul>
+    </form>
+  <span onclick="closeResultSection()" class="closeResultSection"><i class="fa-solid fa-xmark"></i></span>
+</div>
+
+<div class="wrapper">
+
+
+
+      <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+      <ul class="tabs-box">
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn active">CodeJS Projects</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">JavaScript Logic</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">In Code</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Web Search</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Snippets</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Videos</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">StackOverflow</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Headers</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Footers</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Buttons</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Checkboxes</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Cards</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Forms</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Toggles</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Loaders</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Inputs</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn">Radio Buttons</li>
+        <li onclick="searchDirectingClick(event)" class="tab searchTabBtn" id="webImagesTabBtn">Web Images</li>
+        <li class="tab disableBtnCarousel">JavaScript</li>
+        <li class="tab disableBtnCarousel">HTML</li>
+        <li class="tab disableBtnCarousel">CSS</li>
+        <li class="tab disableBtnCarousel">DOM</li>
+        <li class="tab disableBtnCarousel">Web Api</li>
+        <li class="tab disableBtnCarousel">Tutorials</li>
+        <li class="tab disableBtnCarousel">Q&A</li>
+        <li class="tab disableBtnCarousel">Articles</li>
+        <li class="tab disableBtnCarousel">Most Popular</li>
+        <li class="tab disableBtnCarousel">Most Forked</li>
+        <li class="tab disableBtnCarousel">Most Upvoted</li>
+      </ul>
+      <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+</div>
+
+
+
+<div class="resultContainer hiddenResults hiddenElement" id="resultContainer">
+
+  <div class="snippetsResults hiddenResults hiddenElement" id="snippetsResults">
+    <iframe class="snippetsFrame" id="snippetsFrame" name="snippetsFrame" src="about:blank"></iframe>
+  </div>
+
+  <div class="webResultWrapper hiddenResults hiddenElement" id="webResultWrapper">
+    <div class="webResultMain" id="webResultMain">
+
+
+    </div>
+    <div class="webResultSide">
+      <div class="relatedWrapper" id="relatedWebWrapper">
+        <h3 class="relatedHeading">Related searches</h3>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="soResultWrapper hiddenResults hiddenElement" id="soResultWrapper">
+    <div class="webResultMain" id="soResultsContainer">
+
+
+    </div>
+
+
+    <div class="webResultSide">
+      <div class="relatedWrapper" id="relatedSOWrapper">
+        <h3 class="relatedHeading">Related searches</h3>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+        <span class="relatedElement"><span class="relatedSearchIcon"><i class="fas fa-search"></i></span><h4 class="relatedText">Related search term</h4></span>
+      </div>  
+    </div>
+  </div>
+
+
+
+  <div class="videoResultWrapper hiddenResults hiddenElement" id="videoResultWrapper">
+    <div class="videoResultMain" id="videoResultMain">
+
+      
+
+    </div>
+
+  </div>
+
+<!-- BEGINNING WEB IMAGES RESULT SECTION WRAPPER -->
+
+
+  <div class="webImagesResultWrapper hiddenResults hiddenElement" id="webImagesResultWrapper">
+    <section class="webImagesGrid" id="webImagesGrid">  
+    </section>
+  </div>
+
+  <div class="gridResults hiddenResults hiddenElement" id="gridResults">
+    
+  </div>
+  <div class="navigationWrapper" id="navigationWrapper">
+    <span class="navigationItems" id="navigationItems">
+      <button onclick="loadMoreResults()" class="navBtn" id="loadMoreResultsBtn">Load More</button>
+    </span>
+  </div>
+</div>
+
+</section>
+</div>
+
+<!-- BEGINNING OF IMAGES GALLERY POPUP MODAL -->
+
+<div class="modal-container" aria-modal="true" role="dialog" hidden="true" id="modalContainer">
+      <div class="modal">
+        <div class="modal__overlay">
+          <div class="modal__btn-container galleryBtnBox">
+            <button class="modal__btn modal__arrow modal__arrow--left" id="nextBtnGallery" aria-label="Previous image">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 6.75L4.75 12L10.25 17.25"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 12H5"></path>
+              </svg>
+            </button>
+            <button class="modal__btn modal__close" aria-label="Close gallery" id="closeGalleryBtn">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L6.75 17.25"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 6.75L17.25 17.25"></path>
+              </svg>
+            </button>
+            <button class="modal__btn modal__arrow modal__arrow--right" id="previousBtnGallery" aria-label="Next image">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"></path>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"></path>
+              </svg>
+            </button>
+          </div>
+          
+        </div>
+        
+        <div class="modal__image-container carouselSlide" id="modalImagesContainer">
+          
+        </div>
+
+        
+      </div>
+      <div class="imgHowToContainer">
+          <span class="imgHowToMessage">Click an image to copy it's "src" attribute.</span>
+      </div>
+</div>
+
+<!-- BEGINNING OF IMAGES GALLERY POPUP MODAL -->
+
+<div class="videoModalContainer hiddenResults hiddenElement" aria-modal="true" role="dialog" hidden="true" id="videoModalContainer">
+      <div class="videoModal hiddenResults hiddenElement" id="videoModal">
+
+        <div class="videoPopup hiddenResults hiddenElement" id="videoPopup">
+          <div class="videoPopupHeader hiddenResults" id="videoPopupHeader"> <span>Click here to Drag or Resize Video</span>  </div>
+          <div class="videoPopupBtn" id="videoPopupBtn"><span onclick="dockVideo()"  class="dockVideoBtn hiddenResults" id="dockVideoBtn"><i class="fa-regular fa-window-maximize"></i></span><span onclick="closeVideo()" class="videoHeaderBtn"><i class="fa-solid fa-xmark"></i></span></div>
+            <div class="" id="">
+              <iframe id="streamElement" name="streamElement" class="poppedVideoFrame hiddenResults hiddenElement" src="about:blank" frameborder="0" allowfullscreen></iframe>  
+            </div>
+          </div>  
+      </div>
+
+      <section class="videoSubContentWrapper" id="videoSubContentWrapper">
+        <div class="videoHowToContainer">
+          <div class="videoSubContentTitleWrapper"><span class="videoSubTitle" id="videoSubTitle">.</span></div><div class="videoSubContentButtonWrapper"><span class="videoSubViews" id="videoSubViews">327K views</span><span class="videoPageRedirect" id="videoPageRedirect" onclick="videoOGPageRedirect(this)">Visit website</span><button onclick="popOutVideo()" class="videoUndockBtn">In-Editor Video</button></div>
+      </div>
+
+
+      <div class="imgHowToContainer">
+          <span class="imgHowToMessage">Click the 'In-Editor Video' button to watch this video in the editor.</span>
+      </div>
+      </section>
+    
+
+</div>
+
+
+<textarea class="textAreaTemp" id="textAreaTemp"></textarea>
+
+<div class="toastWindow copyToastWindow">
+  <span class="copyToastMessage">Image "src" copied to clipboard.</span>
+</div>
+
+<div class="toastWindow connToastWindow">
+  
+</div>
+
+<div class="successNotificationWrapper " id="successNotificationWrapper">
+  <div class="centerSuccessWrapper">
+  <div class="successNotificationPopup" id="successNotificationPopup">
+    <div class="errorNotificationIcon removeMsgIcons hiddenSuccessIcon" ><i class="fa-solid fa-triangle-exclamation"></i></div>
+    <div class="successNotificationIcon removeMsgIcons hiddenSuccessIcon"><i class="fa-regular fa-circle-check"></i></div>
+    <div class="forkNotificationIcon removeMsgIcons hiddenSuccessIcon"><i class="fa-solid fa-code-fork"></i></div>
+    <div class="searchNotificationIcon removeMsgIcons hiddenSuccessIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="newFileNotificationIcon removeMsgIcons hiddenSuccessIcon" id="newFileNotificationIcon"><i class="fa-regular fa-file"></i></div>
+    <span class="successNotificationTitle">File Forked Successfully</span>
+    <span class="successNotificationText" id="successNotificationText">This file has been forked successfully.<br>Would you like to open your fresh fork in a new tab?</span>
+      <div class="notificationBtnWrapper">
+        <button onclick="hideForkSuccess()" class="successNotificationBtnClose">Maybe Later</button>
+        <button onclick="openNewFileTab(this)" class="successNotificationBtnOpen" id="">Yes, Please</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="moreResourcesWrapper">
+
+<div class="resourcesContainer">
+  <h4 class="moreResourcesHeading">Links</h4>
+  <div class="resourceLink">
+  <a href="/index" target="_blank">Home</a>
+  <a href="/docs" target="_blank">Docs</a>
+  <a href="/signup" target="_blank">SignUp</a>
+  <a href="/login" target="_blank">LogIn</a>
+  </div>
+</div>
+
+<!--<div class="spacerMoreRes">
+  
+</div>
+
+<div class="resourcesContainer">
+  <h4 class="moreResourcesHeading">Tools and Resources</h4>
+  <div class="resourceLink">
+  <a href="/index" target="_blank">Home</a>
+  <a href="/editorfeatures" target="_blank">Editor Features</a>
+  <a href="/signup" target="_blank">Sign-Up</a>
+  <a href="/login" target="_blank">Log-In</a>
+  </div>
+</div>-->
+
+</div>
+
+
+<div class="overlayPopupWindow fadeInLight" id="overlayPopupWindow">
+    <div class="middlePopupWrapperOpen" id="middlePopupWrapperOpen">
+
+      <span onclick="closeFunctionPopup()" class="closeIcon" id="closeIcon"><i class="fa-solid fa-xmark"></i></span>
+      <h4 class="formHeading" id="formHeading">Name your file.</h4>
+      <div class="formElement">
+
+      </div>
+     
+      <input id="newFileNameInput" name="newFileNameInput" placeholder="New file name" class="formInput" type="text" required="" onkeydown="publicFileSubmit(event)"><button onclick="newPublicFile(event)" id="" class="formElementButton" type="submit">New File</button></div>
+
+    </div>
+</div>
+
+
+<div class="shortcutsWrapper hiddenResults" id="shortcutsWrapper" onclick="closeShortcuts(event)"> 
+  <div class="shortcutsElement">
+    <h3 class="shortcutsHeading">Keyboard Shortcuts</h3>
+
+    <div class="shortcutsSeparator">
+      <h4><i class="fa-brands fa-apple"></i>&nbsp&nbsp Mac OS</h4>
+      <div class="shortcutsBox">
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">o</kbd></kbd>&nbsp Toggle full-screen code.</span><br>
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">f</kbd></kbd>&nbsp Toggle full-screen live preview.</span><br>
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">b</kbd></kbd>&nbsp HTML tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">h</kbd></kbd>&nbsp CSS tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">u</kbd></kbd>&nbsp JavaScript tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">j</kbd></kbd>&nbsp Run JavaScript logic.</span><br>
+        <!--<span class="shortcutLine"><kbd><kbd>⌘ cmd</kbd> <span>+</span> <kbd class="singleLetters">s</kbd></kbd>&nbsp Save file.</span><br>-->
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">i</kbd></kbd>&nbsp; Open console.</span><br>
+      </div>
+    </div>
+
+    <div class="shortcutsSeparator">
+      <h4><i class="fa-brands fa-linux"></i>&nbsp&nbsp Linux</h4>
+      <div class="shortcutsBox">
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">o</kbd></kbd>&nbsp Toggle full-screen code.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">f</kbd></kbd>&nbsp Toggle full-screen live preview.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">b</kbd></kbd>&nbsp HTML tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">h</kbd></kbd>&nbsp CSS tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">u</kbd></kbd>&nbsp JavaScript tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">j</kbd></kbd>&nbsp Run JavaScript logic.</span><br>
+        <!--<span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>+</span> <kbd class="singleLetters">s</kbd></kbd>&nbsp Save file.</span><br>-->
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">i</kbd></kbd>&nbsp; Open console.</span><br>
+      </div>
+    </div>
+
+    <div class="shortcutsSeparator">
+      <h4><i class="fa-brands fa-windows"></i>&nbsp&nbsp Windows</h4>
+      <div class="shortcutsBox">
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">o</kbd></kbd>&nbsp Toggle full-screen code.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">f</kbd></kbd>&nbsp Toggle full-screen live preview.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">b</kbd></kbd>&nbsp HTML tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">h</kbd></kbd>&nbsp CSS tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">u</kbd></kbd>&nbsp JavaScript tab focus.</span><br>
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">j</kbd></kbd>&nbsp Run JavaScript logic.</span><br>
+        <!--<span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>+</span> <kbd class="singleLetters">s</kbd></kbd>&nbsp Save file.</span><br>-->
+        <span class="shortcutLine"><kbd><kbd>ctrl</kbd> <span>&nbsp; + &nbsp;</span> <kbd class="singleLetters">i</kbd></kbd>&nbsp; Open console.</span><br>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div id="readMeTXTFile" class="readMeTXTFile" onclick="closeTxtFile(event)">
+  <div class="readMeContainer">
+  <div class="insertLinkInputWrapper" id="insertLinkInputWrapper">
+    <div class="inputURLWrapper">
+    <input placeholder="https://www.someLinkResour..." type="text" name="imgLinkInput" id="insertTxtImageInput" class="insertLinkInput">
+    <button onclick="addLinkToTxt()">Done</button>
+    </div>
+  </div>
+  <div class="editButtons"> 
+      <div class="txtBtnFlex">
+        <span title="ALIGNMENT">
+            <!-- alignment -->
+            <button class="readMeBtn" data-edit="justifyLeft"><i class="fa-solid fa-align-left"></i></button>
+            <button class="readMeBtn" data-edit="justifyCenter"><i class="fa-solid fa-align-center"></i></button>
+            <button class="readMeBtn" data-edit="justifyRight"><i class="fa-solid fa-align-right"></i></button>
+        </span>
+        
+        <span title="STYLES">
+
+            <!-- bold -->
+            <button class="readMeBtn" data-edit="bold"><b>B</b></button>
+            <!-- italic -->
+            <button class="readMeBtn" data-edit="italic"><i>I</i></button>
+            <!-- underline -->
+            <button class="readMeBtn" data-edit="underline"><u>U</u></button>
+            <!-- strike -->
+            <button class="readMeBtn" data-edit="strikeThrough"><s>S</s></button>
+        </span>
+        <span title="TEXT FORMAT">
+            <!-- h1~h3 -->
+            <button class="readMeBtn" data-edit="formatBlock:p">P</button>
+            <button class="readMeBtn" data-edit="formatBlock:H1">h1</button>
+            <button class="readMeBtn" data-edit="formatBlock:H2">h2</button>
+            <button class="readMeBtn" data-edit="formatBlock:H3">h3</button>
+        </span>
+
+        <span title="FONT SIZE">
+            <!-- font-size -->
+            <button class="readMeBtn" data-edit="fontSize:1">S</button>
+            <button class="readMeBtn" data-edit="fontSize:3">M</button>
+            <button class="readMeBtn" data-edit="fontSize:5">L</button>
+        </span>
+      </div>
+
+      <div class="txtBtnFlex">
+        <span title="LISTS">
+            <!-- ul/ol -->
+            <button class="readMeBtn" data-edit="insertUnorderedList"><i class="fa-solid fa-list"></i></button>
+            <button class="readMeBtn" data-edit="insertOrderedList"><i class="fa-solid fa-list-ol"></i></button>
+        </span>
+        <span title="INSERT">
+          <!-- outdent -->
+            <button class="readMeBtn" data-edit="insertImage"><i class="fa-regular fa-image"></i></button>
+            <!-- indent -->
+            <button class="readMeBtn" data-edit="createLink"><i class="fa-solid fa-link"></i></button>
+            <!-- indent -->
+            <button class="readMeBtn" data-edit="unlink"><i class="fa-solid fa-link-slash"></i></i></button>  
+        </span>
+
+        
+
+        <span title="COPY"> 
+            <!-- copy -->
+            <button class="readMeBtn" data-edit="copy"><i class="fa-regular fa-clipboard"></i></button>
+        </span>
+
+         <span title="INDENT">
+          <!-- indent -->
+            <button class="readMeBtn btnFont" data-edit="fontName:serif">Serif</button>
+            <!-- indent -->
+            <button class="readMeBtn btnFont" data-edit="fontName:sans-serif">Sans-Serif</button>
+        </span>
+      </div>
+    </div>
+    <div contenteditable="true" id="textbox" class="redMeTextbox" autocorrect="off" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <h1>ReadMe.txt</h1>
+    </div>
+  </div>
+</div>
+
+<div onclick="hideShareWrapper(this, event)" class="sharePopUpWrapper" id="sharePopUpWrapper">
+  <div class="sharePopUp">
+
+  <h3 class="shareHeading">Share it, & make your code useful to others</h3>
+  <p class="shareText">Spread the love <i class="fa-regular fa-heart"></i>, & help grow the community.</p>
+
+  <div class="shareLinks">
+  <!-- facebook -->
+  <a onclick="hideShare()" class="facebook" target="blank">
+    <i class="fab fa-facebook"></i>
+    <span class="shareIconText">Facebook</span>
+  </a>
+  
+  <!-- twitter -->
+  <a onclick="hideShare()" class="twitter" target="blank"><i class="fab fa-twitter"></i><span class="shareIconText">Twitter</span>
+  </a>
+  <!-- linkedin -->
+  <a onclick="hideShare()" class="linkedin" target="blank"><i class="fab fa-linkedin"></i><span class="shareIconText">Linkedin</span>
+  </a>
+  
+  <!-- reddit -->
+  <a onclick="hideShare()" class="reddit" target="blank"><i class="fab fa-reddit"></i><span class="shareIconText">Reddit</span>
+  </a>
+
+  <!-- whatsapp-->
+  <a onclick="hideShare()" class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i><span class="shareIconText">WhatsApp</span>
+  </a>
+  </div>
+  <div class="shareLinkText">
+    
+  </div>
+  <button onclick="shareLinkHref()" class="shareLinkBtn" id="shareLinkBtn"><i class="fa-regular fa-clipboard"></i>&nbsp; Copy Page Link</button>
+  </div>
+</div>
+
+
+
+<section class="recorder-options sleepyBtn" onclick="closeRecOptions(this, event)">
+   <div class="recOptionsWrapper">
+    <div class="recHeadWrapper">
+        <h2 class="recHeading"><i class="fas fa-video"></i></h2><h2 class="recHeadingText">CodeJS screen recorder and tutorials automation tool.</h2>
+        <div class="displayRecFeaturesWrapper">
+        <div class="displayRecFeatures">
+            <div class="recFeaturePill"><p><i class="fa-regular fa-lightbulb"></i>&nbsp; Smart</p></div>
+            <div class="recFeaturePill"><p><i class="fas fa-keyboard"></i>&nbsp; Automated</p></div>
+            <div class="recFeaturePill"><p><i class="fa-solid fa-sack-dollar"></i>&nbsp; Free</p></div>
+        </div>
+        </div>
+    </div>
+    <hr class="splitLine">
+    <div class="recHowToOuter"><div class="recHowTo"><p><i class="fa-regular fa-lightbulb"></i>&nbsp; Click on the "Start Manual Recording" button if you plan on typing in the code manually. When you are done, click on the green camera icon &nbsp;<i class="fas fa-video"></i>&nbsp; at the top of the screen to stop the recording and download your video.</p></div></div>
+       <div class="recBtnWrapper"><div class="recHeadWrapIcon"><i class="fa-solid fa-display"></i> <h3 class="recHeading">&nbsp;Classic Screen Recording</h3></div> <button onclick="startRecording()" class="recBtn"><i class="fas fa-video"></i>&nbsp; Start Manual Recording</button></div>
+       <hr class="splitLine">
+       <div class="recHowToOuter"><div class="recHowTo"><p><i class="fa-regular fa-lightbulb"></i>&nbsp; Paste your code in the corresponding language fields & click on the "Start Automated Recording" button. Now relax and wait for your video & download button to appear on screen.</p></div></div>
+       <div class="recBtnWrapper"><div class="recHeadWrapIcon"><i class="fas fa-keyboard"></i><h3 class="recHeading">&nbsp;Automated Screen Recording&nbsp;&nbsp;</h3><div class="recFeaturePill"><p>Experimental feature</p></div></div><button onclick="changeAutoRec(); " class="recBtn"><i class="fas fa-keyboard"></i>&nbsp; Start Automated Recording</button></div>
+       <div class="recTextWrapper">
+        <div class="recText"><h4>HTML</h4>
+           <div contenteditable="true" class="recTextHtml" id="recTextHtml"></div>
+        </div>
+        <div class="recText"><h4>CSS</h4>
+           <div contenteditable="true" class="recTextHtml" id="recTextCss"></div>
+        </div>
+        <div class="recText"><h4>JS</h4>
+           <div contenteditable="true" class="recTextHtml" id="recTextJs"></div>
+        </div>
+       </div>
+   </div> 
+</section>
+
+<video src="" class="video-feedback sleepyBtn"></video>
+
+<section class="recorded-video-wrap sleepyBtn" onclick="closeRecVideo(this, event)">
+   <video src="" controls width="1280" height="720" class="recorded-video sleepyBtn" id="recorded-video"></video>
+   <div class="recDownWrapper">
+       <a class="download-video"><button class="recDownBtn"><i class="fa-solid fa-floppy-disk"></i>&nbsp; Download video</button></a>
+   </div>
+</section>
+
+
+
+<a class="download-video sleepyBtn"></a>
+
+<!-- END OF IN EDITOR SEARCH SUGGEST -->
+
+    <script type="text/javascript" src="./js/spinnerElement.js" async></script>
+    <script type="text/javascript" src="./js/qodejsInit.js" defer></script>
+
+    <script type="text/javascript" src="./js/editorElements.js"></script>
+    <script type="text/javascript" src="./js/qodejs.js"></script>
+    <script type="text/javascript" src="./js/processVariables.js"></script>
+
+    <script type="text/javascript" src="./js/jsInsert.js"></script>
+    <script type="text/javascript" src="./js/cssInsert.js"></script>
+    <script type="text/javascript" src="./js/suggestionsInsert.js"></script>
+    <script type="text/javascript" src="./js/mainSideBarNavigation.js"></script>
+    <script type="text/javascript" src="./js/mainHeader.js"></script>
+    <!--<script type="text/javascript" src="./js/editorTodoApp.js"></script>-->
+    <script type="text/javascript" src="./js/qwerycode.js"></script>
+    <script type="text/javascript" src="./js/prism.js"></script>
+    <script type="text/javascript" src="./js/qodejsEditorCalls.js"></script>
+    <script type="text/javascript" src="./js/getBrackets.js" defer></script>
+    <script type="text/javascript" src="./js/editorSettingsSection.js" defer></script>
+    <script type="text/javascript" src="./js/readMe.js" defer></script>
+    <script type="text/javascript" src="./js/shareScript.js" defer></script>
+    <script type="text/javascript" src="./js/videoRecorder.js" defer></script>
+    <script type="text/javascript" src="./js/insertPal.js" defer></script>
+    <script type="text/javascript" src="./js/ai_logic.js" defer></script>
+    <script type="text/javascript" src="./js/html2canvas.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify-html.min.js"></script>  
+  </body>
+</html>

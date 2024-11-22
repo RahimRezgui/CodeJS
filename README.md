@@ -1,27 +1,27 @@
 CodeJS is an AI-powered code editor that enhances developer productivity by integrating multiple AI technologies for intelligent coding assistance. A real replacement for JSbin, CodePen etc...
 
-## Demo
+## Demo:
 
 **Link to the demo: https://codejs.me/editor**
 
-## Features
+## Features:
 
-Multi-AI support (OpenAI, Anthropic, Google AI)
-Context aware
-Context sharing
-Autocomplete
-Zen Coding
-One click export
-Code Beautifier
-Live preview
-Code Highlighting
-and more ...
+> Multi-AI support (OpenAI, Anthropic, Google AI)
+> Context aware
+> Context sharing
+> Autocomplete
+> Zen Coding
+> One click export
+> Code Beautifier
+> Live preview
+> Code Highlighting
+> and more ...
 
-## Prerequisites
+## Prerequisites:
 
-Node.js (v16+)
-npm
-API keys from OpenAI, Anthropic, and Google AI
+> Node.js (v16+)
+> npm
+> API keys from OpenAI, Anthropic, and Google AI
 
 ## Installation:
 
@@ -29,24 +29,24 @@ API keys from OpenAI, Anthropic, and Google AI
 2. `export OPENAI_API_KEY="your_openai_key"`
 3. `export ANTHROPIC_API_KEY="your_anthropic_key"`
 
-Update the .env file with the Google AI API key
+> Update the .env file with the Google AI API key
 
-## Run 
+## Run:
 
 `node server.js`
 
 **Access the editor: Open http://localhost:3200/editor**
 
-## Contributing
+## Contributing:
 
-Contributions are welcome!
+> Contributions are welcome!
 
-Fork the repository
-Create a feature branch
-Commit changes
-Push to the branch
-Open a Pull Request
+> Fork the repository
+> Create a feature branch
+> Commit changes
+> Push to the branch
+> Open a Pull Request
 
-License
+## License:
 MIT License
 

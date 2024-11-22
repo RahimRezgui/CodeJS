@@ -1,0 +1,78 @@
+/*:root {
+    --dark-background-color: rgba(37, 37, 39, 1);
+    --dark-background-color-alt: rgba(25, 25, 26, 1);
+    --dark-trim-color: #333333;
+    --dark-text-color: rgba(255, 255, 255, 1);
+    --dark-text-color-alt: rgba(124, 124, 131, 1);
+    --dark-primary-color: rgba(7, 70, 202, 1);
+    --dark-primary-color-alt: rgba(207, 207, 252, 0.2);
+    --dark-primary-color-alt-50: rgba(54, 54, 226, 1);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  scrollbar-width: none;
+}*/
+
+/*  letter-spacing: .09px;
+    
+    --background-color:  rgba(216, 216, 218, 1);
+    --background-color-alt:  rgba(210, 210, 212, 1);
+    --trim-color: rgba(0, 0, 0, .1); 
+    --text-color: rgba(23, 23, 28, 1);
+    --text-color-alt: rgba(32, 32, 39, 1);
+    
+    --primary-color: rgba(7, 70, 202, 1);
+    --primary-color-alt: rgba(13, 13, 242, 0.1);
+    --primary-color-alt-50: rgba(54, 54, 226, 1);
+    --font-family: 'Poppins' ,'Quicksand', sans-serif;
+
+ 
+    color: var(--text-color);
+    font-family: var(--font-family);
+    background: var(--background-color-alt);
+    -webkit-font-smoothing: antialiased;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    min-width: 100vw; 
+    width: 100vw;
+    overflow-y: visible;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+/*
+body::-webkit-scrollbar { display: none; }
+
+body.theme-dark {
+    --background-color: var(--dark-background-color);
+    --background-color-alt: var(--dark-background-color-alt);
+    --trim-color: var(--dark-trim-color);
+    --text-color: var(--dark-text-color);
+    --text-color-alt: var(--dark-text-color-alt);
+    --primary-color-alt: var(--dark-primary-color-alt);
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --background-color: var(--dark-background-color);
+        --background-color-alt: var(--dark-background-color-alt);
+        --trim-color: var(--dark-trim-color);
+        --text-color: var(--dark-text-color);
+        --text-color-alt: var(--dark-text-color-alt);
+        --primary-color-alt: var(--dark-primary-color-alt);
+        -webkit-font-smoothing: antialiased;
+    }
+}*/

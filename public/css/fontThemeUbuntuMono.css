@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Ubuntu Mono";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Ubuntu Mono";
+}
+.bracketsTextArea{
+  font-family: "Ubuntu Mono";
+}

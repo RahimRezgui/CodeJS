@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Anonymous Pro";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Anonymous Pro";
+}
+.bracketsTextArea{
+  font-family: "Anonymous Pro";
+}

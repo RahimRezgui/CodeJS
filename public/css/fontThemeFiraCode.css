@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Fira Code";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Fira Code";
+}
+.bracketsTextArea{
+  font-family: "Fira Code";
+}

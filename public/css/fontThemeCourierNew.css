@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Courier New";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Courier New";
+}
+.bracketsTextArea{
+  font-family: "Courier New";
+}

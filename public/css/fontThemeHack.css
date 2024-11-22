@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: Hack;
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: Hack;
+}
+.bracketsTextArea{
+  font-family: Hack;
+}

@@ -1,0 +1,91 @@
+ul {
+  list-style: none;
+
+}
+b {
+  font-weight: 900;
+}
+.searchSuggestList {
+  width: 100%;
+  max-width: 700px;
+  min-height: 10px;
+  max-height: 35vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 0px 0px 6px 6px;
+  position: fixed;
+  border-left: 1px solid var(--trim-color);
+  border-right: 1px solid var(--trim-color);
+  border-bottom: 1px solid var(--trim-color);
+  font-weight: 300;
+  margin-top: -1vh;
+  box-shadow: -.5px 6px 6px 1px rgba(0, 0, 0, 0.14);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.searchSuggestListOpen {
+  width: 100%;
+  max-width: 700px;
+  min-height: 0px;
+  max-height: 35vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 0px 0px 6px 6px;
+  position: absolute;
+  border-left: 1px solid var(--trim-color);
+  border-right: 1px solid var(--trim-color);
+  border-bottom: 1px solid var(--trim-color);
+  font-weight: 300;
+  margin-top: 60px;
+  margin-left: -9px;
+  top: 0;
+  box-shadow: -.5px 6px 6px 1px rgba(0, 0, 0, 0.14);
+  overflow: scroll;
+  scrollbar-width: none;
+  z-index: 1200;
+}
+
+.searchSuggestList::-webkit-scrollbar {
+  display: none;
+}
+
+.searchSuggestList::-webkit-scrollbar  {
+  height: 0;
+  width: 0;
+  background: transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.searchSuggestList li{
+  justify-content: normal;
+}
+.searchSuggestList-items {
+  padding: 12px 29px;
+}
+.searchSuggestList-items:hover {
+  background-color: var(--background-color-alt);
+  border-left: 5px solid var(--primary-color-alt-50);
+}
+.searchSuggestSelected{
+  background-color: var(--background-color-alt);
+  border-left: 5px solid var(--primary-color-alt-50);
+}
+
+
+
+.searchSuggestListOpen li{
+  justify-content: normal;
+}
+.searchSuggestList-items-Open {
+  padding: 12px 29px;
+}
+.searchSuggestList-items-Open:hover {
+  background-color: var(--background-color-alt);
+  border-left: 5px solid var(--primary-color-alt-50);
+}
+.searchSuggestSelectedOpen{
+  background-color: var(--background-color-alt);
+  border-left: 5px solid var(--primary-color-alt-50);
+}

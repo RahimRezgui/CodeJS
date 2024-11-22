@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: "Source Code Pro";
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: "Source Code Pro";
+}
+.bracketsTextArea{
+  font-family: "Source Code Pro";
+}

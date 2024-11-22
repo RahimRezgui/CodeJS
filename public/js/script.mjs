@@ -1,0 +1,1 @@
+import { useGesture } from 'https://cdn.jsdelivr.net/npm/@use-gesture/vanilla/dist/index.mjs';

@@ -1,0 +1,326 @@
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --mainBack: rgba(37, 37, 39, 1);
+  --codeBack: rgba(25, 25, 26, 1);
+  --codeFont: #8b949e;
+  --codeRef: #343941;
+  --navLink: rgba(32, 89, 207, 1);
+  --navBack: rgba(25, 25, 26, 1);
+  --navBorder: #30363d;
+  --mainHeadUnder: #21262d;
+  --mainHeadFont: #c9d1d9;
+  --mainHeadSubFont: #87909a;
+  --bodyFont: #b9c1c9;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  color: var(--bodyFont);
+  background-color: var(--mainBack);
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+.logoImg {
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  cursor: pointer;
+}
+
+#navbar {
+  position: fixed;
+  width: 420px;
+  /* width: 450px; */
+  top: 15px;
+  height: 100%;
+  border-right: solid;
+  border-width: 0.8px;
+  border-color: var(--navBorder);
+  overflow: scroll;
+  z-index: 1;
+}
+
+#navbar header {
+  color: var(--mainHeadFont);
+  background-color: var(--mainBack);
+  font-size: 24px;
+  margin-left: 20px;
+  text-align: left;
+  height: 55px;
+  z-index: 1;
+  vertical-align: sub;
+  display: flex;
+  overflow-y: hidden;
+}
+
+#headerText {
+  font-size: 24px;
+  font-weight: 500;
+  z-index: 1;
+  margin-left: 20px;
+  vertical-align: sub;
+}
+
+#navbar header .icon {
+  fill: white;
+  height: 25px;
+  width: 25px;
+}
+
+#navbar ul {
+  height: calc(100vh + 200px);
+  text-align: left;
+  /* margin-left: 20px; */
+  /*margin-bottom: 200px;*/
+  background-color: var(--navBack);
+  border-top: solid;
+  border-width: 0.8px;
+  border-color: var(--navBorder);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+#navbar ul li:first-child {
+  margin-top: 15px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: var(--navLink);
+
+}
+
+
+#navbar li a:hover {
+  text-decoration: underline;
+}
+
+.nav_link_outer{
+  margin-left: 10px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  font-size: 1.2rem;
+}
+
+.nav_link_inner{
+  padding-left: 40px;
+  height: 30px;
+  margin-bottom: -10px;
+  font-size: 0.85rem;
+  color: var(--codeFont);
+}
+
+#logoImg {
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  max-height: 40px;
+}
+
+#main-doc {
+  position: absolute;
+  left: 420px;
+  padding: 0 30px;
+  /* margin-right: 388px; */
+
+  max-width: 1100px;
+  color: var(--bodyFont);
+}
+
+#main-doc section {
+  margin: 30px 15px;
+}
+
+#main-doc header {
+  text-align: left;
+  font-size: 24px;
+  padding: 10px 0;
+  color: var(--mainHeadFont);
+  border-bottom: 1px solid var(--mainHeadUnder);
+}
+
+#main-doc section p {
+  margin: 5px 0;
+}
+
+#main-doc #About_Git header {
+  font-size: 32px;
+}
+
+#main-doc #About_Git p {
+  font-size: 24px;
+  color: var(--mainHeadSubFont);
+}
+
+#main-doc #GitHub_and_the_command_line header:nth-of-type(2) {
+  border-bottom: none;
+  color: var(--mainHeadSubFont);
+}
+
+#main-doc article {
+  padding: 10px;
+  text-align: justify;
+}
+
+#main-doc code {
+  display: inline-block;
+  padding: 20px;
+  background-color: var(--codeBack);
+  border-radius: 8px;
+  border: 1px solid var(--mainHeadUnder);
+  color: var(--codeFont);
+  line-height: 2.5;
+  margin-top: 20px;
+}
+
+#main-doc span code {
+  padding: 0px 5px;
+  border-radius: 1px;
+  line-height: 1.8;
+  margin-top: 0;
+}
+
+#main-doc section:last-child {
+    margin-bottom: 300px;
+  }
+
+#example {
+  color: var(--bodyFont);
+}
+
+#main-doc a {
+  color: var(--navLink);
+  text-decoration: none;
+}
+
+#main-doc a:hover {
+  text-decoration: underline;
+}
+
+#main-doc ul {
+  margin: 10px 40px;
+  list-style-type: square;
+}
+
+span {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    line-height: 1.8;
+  }
+
+  #navbar {
+    width: 300px;
+  }
+
+
+
+  #main-doc {
+    left: 300px;
+  }
+
+  #main-doc #About_Git p {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    line-height: 1.6;
+  }
+
+  #navbar {
+    width: 200px;
+  }
+
+
+
+  #main-doc {
+    left: 200px;
+  }
+
+  #main-doc section p {
+    margin: 15px 0;
+  }
+
+  #main-doc #About_Git p {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    line-height: 1.6;
+  }
+
+  #navbar {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+    border-right: none;
+  }
+
+  #navbar header {
+    height: 70px;
+    padding-top: 10px;
+    padding: 10px 25px;
+    margin-left: 0;
+  }
+
+  #navbar ul {
+    width: 100%;
+    height: 300px;
+  }
+
+  #navbar ul li {
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+    margin: 0;
+  }
+
+  #navbar ul li:first-child {
+    margin-top: 10px;
+  }
+
+ 
+
+  #main-doc {
+    padding: 0 10px;
+    top: 360px;
+
+    left: 0;
+    height: 80%;
+  }
+
+/*   #main-doc section {
+    scroll-margin-top: 400px;
+  } */
+
+  #main-doc section:last-child {
+    margin-bottom: 300px;
+  }
+
+  #main-doc #About_Git p {
+    font-size: 18px;
+  }
+}

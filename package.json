@@ -1,0 +1,21 @@
+{
+  "name": "CodeJS",
+  "author": "R. Rezgui - codejs.me",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.2",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "openai": "^4.71.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

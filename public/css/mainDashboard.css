@@ -1,0 +1,702 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.main h2 {
+	padding-bottom: 10px;
+}
+
+.main h5 {
+	padding-bottom: 20px;
+}
+
+.main div {
+	margin-bottom: 0;
+}
+
+.mainContainerQodeJS {
+  margin: 16px;
+  margin-top: 50px;
+  margin-right: 10px;
+  width: calc(100% - 10px);
+  overflow: scroll;
+}
+
+
+#gridLayoutContainer {
+	--gap: 18px;
+	--num-cols: 6;
+	--row-height: 184px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+#gridLayoutContainer>div {
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+/* Anything udner 1795px */
+@media screen and (max-width: 1795px) {
+	#gridLayoutContainer {
+		--num-cols: 5;
+		--row-height: 184px;
+	}
+}
+
+/* Anything udner 1495px */
+@media screen and (max-width: 1495px) {
+	#gridLayoutContainer {
+		--num-cols: 4;
+		--row-height: 184px;
+	}
+}
+
+@media screen and (max-width: 1295px) {
+	#gridLayoutContainer {
+		--num-cols: 3;
+		--row-height: 184px; 
+	}
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	#gridLayoutContainer {
+		--num-cols: 2;
+		--row-height: 184px;
+	}
+}
+
+/* Anything udner 695px */
+@media screen and (max-width: 695px) {
+	#gridLayoutContainer {
+		--num-cols: 1;
+		--row-height: 184px;
+	}
+    .mainContainerQodeJS{
+        margin: 23px;
+        margin-top: 50px;
+    }
+}
+
+/*#gridLayoutContainer {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-row-gap: 40px;
+  grid-column-gap: 20px;
+	/*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 100vh;
+}*/
+
+.fileTitle {
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.welcomeMsg{
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--text-color-alt);
+}
+
+.repoSectionHeading{
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--text-color-alt);
+}
+
+.sectionHeader {
+	display: flex;
+	justify-content: space-between;
+    margin: 16px 16px 0 16px;
+}
+
+.sectionHeader h2 {
+	margin-top: 10px;
+}
+
+.repoTitleElement {
+	display: flex;
+}
+
+.backToDashboardBtn {
+	padding: 10px 15px;
+	margin-left: 20px;
+	outline: none;
+	border: 1px solid var(--trim-color);
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+	color: var(--text-color);
+}
+
+.backToDashboardBtn:hover {
+	background-color: var(--background-color);
+}
+
+.publicFileWrapper {
+	border-radius: 5px;
+	border: 1px solid var(--trim-color);
+	box-shadow: 0px 4px 12px rgba(0,0,0,.025);
+	background: var(--background-color);
+}
+
+.publicFileWrapper img {
+	background: var(--background-color-alt);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.publicFileWrapper img:hover {
+    background: var(--background-color);
+}
+
+
+.sectionWrapper {
+	width: calc(100% - 70px);
+	padding: 0;
+	border: 1px solid var(--trim-color);
+	border-radius: 5px;
+	margin-bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.fileImg {
+	object-fit: contain;
+	background-color: var(--background-color-alt);
+	padding: 30px;
+	border-radius: 5px 5px 0px 0px;
+	width: 100%;
+	height: 120px;
+}
+
+.privateRepoWrapper {
+	border-radius: 5px;
+	border: 1px solid var(--trim-color);
+	box-shadow: 0px 4px 12px rgba(0,0,0,.025);
+	background: var(--background-color);
+}
+
+.privateFileWrapper {
+	border-radius: 5px;
+	border: 1px solid var(--trim-color);
+	box-shadow: 0px 4px 12px rgba(0,0,0,.025);
+	background: var(--background-color);
+}
+
+.privateRepoWrapper img {
+	background: var(--background-color-alt);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	cursor: pointer;
+    filter: hue-rotate(160deg), brightness(50%);
+    transition: all .2s;
+}
+
+.privateFileWrapper img {
+	background: var(--background-color-alt);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	cursor: pointer;
+    transition: all .2s;
+}
+
+.privateRepoWrapper img:hover {
+    background: var(--background-color);
+}
+
+.privateFileWrapper img:hover {
+    background: var(--background-color);
+}
+
+.openRepoContainerWrapper {
+	display: none;
+	opacity: 0;
+	z-index: -2;
+	transition: opacity 0.5s, z-index 0.5s;
+}
+
+.privateContainerWrapper {
+	display: none;
+	opacity: 0;
+	z-index: -2;
+	transition: opacity 0.5s, z-index 0.5s;
+}
+
+/*======================================================
+                   Middle Popup Form Wrapper 
+  ======================================================*/
+
+
+
+.overlayPopupWindow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	z-index: -2;
+	opacity: 0;
+	display: flex;
+	transition: opacity 0.3s, z-index 0.3s;
+
+}
+
+.middlePopupWrapperOpen {
+    border: 1px solid var(--trim-color);
+    background-color: var(--background-color);
+    padding: 50px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.1), 0px 12px 24px rgba(0,0,0,.05);
+}
+
+.closeIcon {
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+	align-content: flex-end;
+	justify-content: right;
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+/*======================================================
+                   Form Elements 
+  ======================================================*/
+.formElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*.formElement input {
+    background-color: var(--background-color-alt);
+    outline: none;
+    border: 1px solid var(--trim-color);
+    color: var(--text-color);
+    padding: 10px 12px;
+    border-radius: 3px;
+    width: calc(100% - 24px);
+    box-shadow: 0px 3px 6px rgba(0,0,0,.08);
+}*/
+
+
+
+.formInput {
+    background-color: var(--background-color-alt);
+    outline: 1px solid transparent;
+    border: 1px solid var(--trim-color);
+    color: var(--text-color);
+    padding: 10px 12px;
+    border-radius: 3px;
+    width: 100%;
+    /*width: calc(100% - 24px);*/
+    opacity: 1;
+
+    box-shadow: 0px 3px 6px rgba(0,0,0,.08);
+    transition: opacity 0.5s;
+    transition: box-shadow 0.3s;
+}
+
+.formInputAnimated {
+    background-color: var(--background-color-alt);
+    outline: none;
+    border: 1px solid var(--trim-color);
+    color: var(--text-color);
+    padding: 10px 12px;
+    border-radius: 3px;
+    width: calc(100% - 24px);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.08);
+    transition: opacity 0.5s;
+}
+
+.pass {
+    width: 100%;
+}
+
+.formInput:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0,0,128, .8);
+}
+
+.inputSuccess {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 5px rgba(0,128,0, .8);
+}
+
+.inputSuccess:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 5px rgba(0,128,0, .8);
+}
+
+.formElementButton {
+    background-color: var(--primary-color);
+    opacity: 1;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    transition: .25s;
+    transition: opacity 0.5s;
+    transition: box-shadow 0.5s;
+}
+
+.formElementButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0,0,128, .5), 0px 0px 16px rgba(0,0,128, .2), 0px 10px 36px rgba(0,0,128, .09);
+}
+
+.formHeading {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+
+.formFooterText {
+    margin-top: 50px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.formFooterText a {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.formFooterText a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hiddenInput {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+/* File SubMenu DropDown and Info Style */
+
+.menu-nav {
+       
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    padding: 10px;
+}
+
+.fileData {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25px;
+    position: relative;
+    padding: 10px;
+    font-size: 13px;
+    color: var(--text-color-alt);
+}
+     
+.menu-item {
+    color: var(--text-color);
+}
+ 
+.three-dots{
+    padding: 0px;
+    margin-right: -5px;
+}
+     
+.three-dots:after {
+    cursor: pointer;
+    color: var(--text-color-alt);
+    content: '\2807';
+    font-size: 20px;
+    padding: 0px;
+  
+}
+     
+a {
+    text-decoration: none;
+    color: #424242;
+}
+     
+a div {
+    padding: 2px;
+}
+
+.dropdown {
+    position: absolute;
+    margin: 0;
+    right: 0px;
+    top: 25px;
+    background-color: var(--background-color); /*#e2e2e2;*/
+    outline: none;
+    opacity: 0;
+    padding: 5px;
+    z-index: -1;
+    max-height: 0;
+    transition: opacity 0.5s, z-index 0.3s, max-height: 0.5s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,.15);
+}
+
+.dropdown button {
+	border: none;
+	outline: none;
+	padding: 10px 24px;
+	width: 100%;
+	border-radius: 3px;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.dropdown button:hover {
+	background-color: var(--primary-color-alt);
+	color: var(--primary-color);
+}
+
+
+     
+.dropdown-container:focus {
+    outline: none;
+ }
+     
+.dropdown-container:focus .dropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    transition: opacity 0.5s, z-index 0.3s, max-height: 0.5s;
+}
+
+.dropdown-container:hover .dropdown {
+    opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    transition: opacity 0.5s, z-index 0.3s, max-height: 0.5s;
+}
+
+.dropdown button:focus .dropdown {
+	opacity: 1;
+    z-index: 100;
+    max-height: 100vh;
+    transition: opacity 0.5s, z-index 0.3s, max-height: 0.5s;
+}
+
+
+/* Main Actions Buttons Main Content */
+
+.button {
+	display: flex;
+	height: 38px;
+	padding: 0;
+	background: var(--primary-color-alt-50);
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+    letter-spacing: .5px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: var(--primary-color);
+}
+
+.button:active {
+	background: var(--primary-color);
+}
+
+.button__text,
+.button__icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 16px;
+	color: #fff;
+	height: 100%;
+}
+
+.button__icon {
+	font-size: 1.2em;
+	background: rgba(0, 0, 0, 0.24);
+}
+
+
+ /* Beginning of dropdown settings */
+ 
+.dropdownSelect {
+  width: calc(100% - 30px);
+  position: relative;
+  margin: auto;
+}
+
+
+
+.selectWrapper {
+  width: 100%;
+  background: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px var(--trim-color) solid;
+  border-radius: 4px;
+  /*padding: 10px 15px 10px 15px;*/
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.optionSelect {
+  padding: 10px 0px 10px 0px;
+  background: transparent;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 4px
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+/*
+  Clicked styles 
+  (added later in Javascript)
+*/
+.selectWrapper:hover {
+  background: var(--background-color-alt);
+  border: 2px var(--primary-color) solid;
+  box-shadow: 0 0 0.8em #26489a;
+  transition: 0.3s;
+}
+
+.optionSelect:hover {
+  background: transparent;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+/*
+  Rotate styles 
+  (added later in Javascript)
+*/
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.collabContainerWrapper{
+    display: none;
+}
+/* End of dropdown settings */
+
+/* Beginnig file title style */
+.fileTitle h3 {
+  width: 100%;
+  max-width: 200px;
+  font-weight: 400;
+  font-size: .82em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-bottom: 3px;
+  display: block;
+}
+
+
+/* End file title style */
+
+
+/*======================================================
+                   Fade In and Animations 
+  ======================================================*/
+
+
+.fadeInLight {	
+	transition: opacity 0.3s, z-index 0.3s;
+	z-index: 110;
+	opacity: 1;
+}
+
+/* HIDDEN RESULTS */
+.hiddenResults {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -10;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .sectionWrapper{
+        width: calc(100% - 20px);
+    }
+}

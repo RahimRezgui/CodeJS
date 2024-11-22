@@ -1,0 +1,10 @@
+#editing, #highlighting, #highlighting * {
+  font-family: monospace;
+  tab-size: 2;
+}
+.lineNumbers {
+  font-family: monospace;
+}
+.bracketsTextArea{
+  font-family: monospace;
+}
